@@ -34,8 +34,12 @@
         margin: 30,
         nav: false,
         dots: false,
-        autoplay: true,
-        autoplayHoverPause: true,
+        autoplay: true, // time for slides changes
+        slideTransition: 'linear',
+        autoplaySpeed: 1200,
+        smartSpeed: 1200,
+        autoplayTimeout: 1200,
+        autoplayHoverPause: false,
         responsive: {
             0: {
                 items: 2
@@ -51,6 +55,7 @@
             }
         }
     })
+
 
     // Portfolio Slider 
     $('.portfolio-slider').owlCarousel({
