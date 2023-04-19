@@ -551,19 +551,20 @@ Main Banner Style
   margin-left: auto;
 }
 
-.banner-text span {
+.banner-text span,
+.banner-text h3 {
   color: #ff4a35;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .banner-text h1 {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.banner-text p {
+.banner-text h5 {
   margin-bottom: 40px;
 }
 
@@ -966,7 +967,7 @@ Service Area
 .service-card {
   position: relative;
   text-align: center;
-  padding: 40px 30px;
+  padding: 30px 30px;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   display: block;
@@ -989,6 +990,13 @@ Service Area
 .service-card:hover p {
   color: #fff;
   z-index: 5555;
+}
+
+.service-card:hover a {
+  color: #fff;
+  z-index: 5555;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .service-card::before {
@@ -1021,7 +1029,7 @@ Service Area
   border-radius: 15px;
 }
 
-.service-card a img {
+.service-card img {
   margin-bottom: 17px;
   max-width: 100% !important;
   margin-left: auto;
@@ -1032,18 +1040,27 @@ Service Area
   height: auto;
 }
 
-.service-card a {
+#ourservice a {
   display: block;
 }
 
-.service-card a h3 {
+.service-card h3 {
   font-size: 20px;
   margin-bottom: 15px;
   position: relative;
 }
 
+.service-card a {
+  position: relative;
+  z-index: 5555;
+  padding-top: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .service-card p {
   margin: 0 auto;
+  font-size: 15px;
 }
 
 .service-shape1 {
@@ -2272,7 +2289,7 @@ Footer Section
 .footer-list ul li {
   margin-top: 10px;
   display: block;
-  font-size: 17px;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -2374,11 +2391,11 @@ Header Area
   color: #ff4a35;
 }
 
-.header-content-right .header-contact li a {
+.header-content-right .header-contact li {
   color: #fff;
 }
 
-.header-content-right .header-contact li a:hover {
+.header-content-right .header-contact li:hover {
   color: #070f4d;
 }
 
@@ -2865,7 +2882,7 @@ Footer Area Another
 .footer-list-2 ul li {
   margin-top: 10px;
   display: block;
-  font-size: 17px;
+  font-size: 15px;
   color: #070f4d;
 }
 
@@ -4849,4 +4866,8 @@ Animation CSS End
 .owl-stage {
   display: flex;
   align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

@@ -159,10 +159,10 @@
   }
 
   .service-card {
-    padding: 30px;
+    padding: 20px 30px;
   }
 
-  .service-card a h3 {
+  .service-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
   }
@@ -1121,10 +1121,10 @@
   }
 
   .service-card {
-    padding: 30px;
+    padding: 20px 30px;
   }
 
-  .service-card a h3 {
+  .service-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
   }
@@ -1314,7 +1314,7 @@
   }
 
   .single-counter p {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .single-counter i {

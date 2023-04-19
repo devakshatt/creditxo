@@ -21,6 +21,7 @@
     $("#cibilForm").load("/components/cibilform.html");
     $("#moreServices").load("/components/moreServices.html");
     $("#pricingComp").load("/components/pricing.html");
+    $("#ourservicesComp").load("/components/ourservices.html");
 
     // FAQ Accordion JS
     $('.accordion').find('.accordion-title').on('click', function () {
