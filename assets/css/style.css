@@ -1028,6 +1028,8 @@ Service Area
   margin-right: auto;
   position: relative;
   z-index: 1;
+  width: 100px;
+  height: auto;
 }
 
 .service-card a {
@@ -1658,7 +1660,7 @@ Price Section
 }
 
 .single-price .single-price-title h2 {
-  font-size: 40px;
+  font-size: 30px;
   color: #4356d6;
   font-weight: 700;
 }
@@ -1684,6 +1686,7 @@ Price Section
   color: #444444;
   display: block;
   margin-top: 10px;
+  font-size: 0.8rem;
 }
 
 .single-price ul li.color-gray {

@@ -16,6 +16,12 @@
         }
     });
 
+    $("#footerComp").load("/components/footer.html");
+    $("#headerComp").load("/components/header.html");
+    $("#cibilForm").load("/components/cibilform.html");
+    $("#moreServices").load("/components/moreServices.html");
+    $("#pricingComp").load("/components/pricing.html");
+
     // FAQ Accordion JS
     $('.accordion').find('.accordion-title').on('click', function () {
         // Adds Active Class
@@ -27,6 +33,17 @@
         // Removes Active Class From Other Titles
         $('.accordion-title').not($(this)).removeClass('active');
     });
+
+    const brandImages = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png", "13.png", "14.png", "15.png", "16.jpg", "17.jpg", "18.png", "19.jpg", "20.webp"]
+    brandImages.forEach((img) => {
+        $("#partnerBrands").append(`<div class="brand-item">
+            <a href="#">
+                <img src="assets/img/partnerbrands/${img}" alt="Brand Images">
+            </a>
+        </div>`);
+    })
+
+
 
     // Brand Slider 
     $('.brand-slider').owlCarousel({
