@@ -1,10 +1,21 @@
 (function ($) {
     'use strict';
+    $("#headerComp").load("/components/header.html");
+    $("#footerComp").load("/components/footer.html");
+    $("#cibilForm").load("/components/cibilform.html");
+    $("#moreServices").load("/components/moreServices.html");
+    $("#pricingComp").load("/components/pricing.html");
+    $("#ourservicesComp").load("/components/ourservices.html");
 
-    // Mean Menu JS
-    jQuery('.mean-menu').meanmenu({
-        meanScreenWidth: "991"
+    waitForElement(".mean-menu", function () {
+        console.log("loaded");
+        // Mean Menu JS
+        jQuery('.mean-menu').meanmenu({
+            meanScreenWidth: "991",
+            // meanMenuTarget
+        });
     });
+
 
     // Navbar Area
     $(window).on('scroll', function () {
@@ -15,13 +26,6 @@
             $('.navbar-area').removeClass("sticky-nav");
         }
     });
-
-    $("#footerComp").load("/components/footer.html");
-    $("#headerComp").load("/components/header.html");
-    $("#cibilForm").load("/components/cibilform.html");
-    $("#moreServices").load("/components/moreServices.html");
-    $("#pricingComp").load("/components/pricing.html");
-    $("#ourservicesComp").load("/components/ourservices.html");
 
     // FAQ Accordion JS
     $('.accordion').find('.accordion-title').on('click', function () {
@@ -262,10 +266,27 @@
     new WOW().init();
 
     // Preloader JS
-    jQuery(window).on('load', function () {
-        jQuery(".preloader").fadeOut(100);
-    });
+    // $(window).on('load', function () {
+    //     jQuery(".preloader").fadeOut(100);
+    // });
+    $('.preloader').css('display', 'block');
+
+    setTimeout(function () {
+        $('.preloader').css('display', 'none');
+    }, 1000); // it will remove after 5 seconds
+
+
 
 })(jQuery);
 
 
+
+function waitForElement(elementPath, callBack) {
+    window.setTimeout(function () {
+        if ($(elementPath).length) {
+            callBack(elementPath, $(elementPath));
+        } else {
+            waitForElement(elementPath, callBack);
+        }
+    }, 500)
+}
