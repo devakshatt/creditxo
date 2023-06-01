@@ -54,6 +54,13 @@
   .default-btn {
     padding: 8px 25px;
   }
+  .chat-btn{
+    padding: 8px 25px;
+    padding-left : 42px;
+  }
+  .chat-btn i{
+    font-size: 1.5rem;
+  }
 
   .section-title h2 {
     font-size: 24px;
@@ -86,6 +93,11 @@
     font-size: 32px;
     margin-bottom: 10px;
     margin-top: 5px;
+  }
+  .brand-logo-hero{
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+    display: block;
   }
 
   .banner-text p {
@@ -1014,6 +1026,13 @@
 
   .default-btn {
     padding: 8px 25px;
+  }
+  .chat-btn{
+    padding: 8px 25px;
+    padding-left : 42px;
+  }
+  .chat-btn i{
+    font-size: 1.5rem;
   }
 
   .section-title h2 {

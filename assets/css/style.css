@@ -186,6 +186,29 @@ Default Btn Style
   z-index: 1;
 }
 
+.chat-btn{
+  background-color: #32AC22;
+  margin-left: 1rem;
+  padding: 12px 42px;
+  padding-left: 54px;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.chat-btn i{
+  font-size: 32px;
+  position: absolute;
+  left: 10%;
+  top: 19%;
+}
+.chat-btn:hover {
+  color: #fff;
+}
+
 .default-btn::before {
   content: "";
   position: absolute;
@@ -549,6 +572,10 @@ Main Banner Style
   position: relative;
   max-width: 550px;
   margin-left: auto;
+}
+
+.brand-logo-hero{
+  display: none;
 }
 
 .banner-text span,
@@ -4529,6 +4556,67 @@ Back To Top Button
   animation: none;
 }
 
+#waBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  cursor: pointer;
+  display: block;
+  z-index: 99;
+}
+
+.wa-btn {
+  background-color: #32AC22;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px #32AC22;
+  box-shadow: 0 0 15px #32AC22;
+  font-size: 28px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  transition: .9s;
+  -webkit-transition: .9s;
+  animation: attention 5s ease infinite;
+}
+.wa-btn i{
+    position: absolute;
+    left: 23%;
+    top: 23%;
+}
+.wa-btn:hover {
+  background: #ff4a35;
+  -webkit-box-shadow: 0 0 15px #ff4a35;
+  box-shadow: 0 0 15px #ff4a35;
+  color: #fff;
+  -webkit-animation: none;
+  animation: none;
+}
+
+@keyframes attention {
+  9% {
+    transform: none;
+  }
+  12% {
+    transform: scale(1.10);
+  }
+  16% {
+    transform: scale(0.90);
+  }
+  20% {
+    transform: scale(1.05);
+  }
+  24% {
+    transform: scale(1);
+  }
+}
+
+.btn-close{
+  position: absolute;
+    right: 15px;
+}
 /*==============================
 Back To Top Button 
 =================================*/
