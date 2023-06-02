@@ -302,13 +302,13 @@
     $('.preloader').css('display', 'none')
   }, 1000) // it will remove after 5 seconds
 
-  setTimeout(function () {
-    $(document).ready(function () {
-      if (window.localStorage.getItem('popState') != 'shown') {
-        showNewsletter()
-      }
-    })
-  }, 6000) // it will remove after 5 seconds
+  //   setTimeout(function () {
+  //     $(document).ready(function () {
+  //       if (window.localStorage.getItem('popState') != 'shown') {
+  //         showNewsletter()
+  //       }
+  //     })
+  //   }, 6000) // it will remove after 5 seconds
 })(jQuery)
 
 function waitForElement(elementPath, callBack) {
@@ -322,10 +322,10 @@ function waitForElement(elementPath, callBack) {
 }
 
 function showNewsletter() {
-  var newsletterModal = new bootstrap.Modal(
-    document.getElementById('newsletterModal'),
-  )
-  newsletterModal.show()
-  console.log('open newsletter')
-  window.localStorage.setItem('popState', 'shown')
+  //   var newsletterModal = new bootstrap.Modal(
+  //     document.getElementById('newsletterModal'),
+  //   )
+  //   newsletterModal.show()
+  //   console.log('open newsletter')
+  //   window.localStorage.setItem('popState', 'shown')
 }
